@@ -39,8 +39,8 @@ A modern web application that displays football match predictions with probabili
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/football-predictions.git
-cd football-predictions
+git clone https://github.com/ilken/plai.git
+cd plai
 ```
 
 2. Install dependencies:
