@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-gray-900 dark:text-white min-h-screen;
+    background-image: radial-gradient(
+      linear-gradient(
+        111.4deg,
+        rgba(238,113,113,1) 1%,
+        rgba(246,215,148,1) 58%
+      )
+    );
+    background-attachment: fixed;
+  }
+  
+  html.dark {
+    background-image: radial-gradient(
+      circle 710px at 5.2% 7.2%,
+      rgba(37,89,222,1) 0%,
+      rgba(37,89,222,1) 7.5%,
+      rgba(4,4,29,1) 44.7%
+    );
+    background-attachment: fixed;
+  }
+}
+
+/* Smooth transitions for theme switching */
+@layer utilities {
+  .transition-theme {
+    @apply transition-colors duration-300;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--background-rgb));
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+/* Selection color */
+::selection {
+  background: #3b82f6;
+  color: white;
+}
+
+/* Focus outline */
+*:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Base styles for better typography */
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+/* Animation utilities */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+} 
