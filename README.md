@@ -2,7 +2,7 @@
 
 A modern web application that displays football match predictions with probability scores and analysis. Features a cyberpunk-inspired dark mode and responsive design.
 
-![Dashboard Preview](preview.png)
+![Preview](https://github.com/user-attachments/assets/f38305fb-cb6e-4053-a31d-5c4ce04afe8c)
 
 ## Features
 
