@@ -2,6 +2,8 @@
 
 A modern web application that displays football match predictions with probability scores and analysis. Features a cyberpunk-inspired dark mode and responsive design.
 
+[🔗 Live Demo](https://plai-orcin.vercel.app/)
+
 ![Preview](https://github.com/user-attachments/assets/f38305fb-cb6e-4053-a31d-5c4ce04afe8c)
 
 ## Features
@@ -68,6 +70,19 @@ npm run start
 yarn build
 yarn start
 ```
+
+## Deployment
+
+The project is deployed on Vercel. You can view the live demo at:
+
+🌐 [https://plai-orcin.vercel.app/](https://plai-orcin.vercel.app/)
+
+To deploy your own version:
+
+1. Fork this repository
+2. Create a new project on [Vercel](https://vercel.com)
+3. Import your forked repository
+4. Vercel will automatically detect Next.js and deploy your app
 
 ## Project Structure
 
