@@ -1,20 +1,20 @@
 import { PredictionsSchema } from '@/types/Prediction.types';
-import { week1Data } from '@/data/week1.data';
+import { data } from '@/data/week1.data';
 
 describe('Predictions Data Validation', () => {
   it('should have valid structure', () => {
     expect(() => {
-      PredictionsSchema.parse(week1Data);
+      PredictionsSchema.parse(data);
     }).not.toThrow();
   });
 
   it('should contain an array of predictions', () => {
-    const parsed = PredictionsSchema.parse(week1Data);
+    const parsed = PredictionsSchema.parse(data);
     expect(Array.isArray(parsed.predictions)).toBe(true);
   });
 
   it('should have valid prediction items', () => {
-    const parsed = PredictionsSchema.parse(week1Data);
+    const parsed = PredictionsSchema.parse(data);
     
     parsed.predictions.forEach((prediction) => {
       // Check required fields
@@ -39,7 +39,7 @@ describe('Predictions Data Validation', () => {
   });
 
   it('should have valid probability ranges', () => {
-    const parsed = PredictionsSchema.parse(week1Data);
+    const parsed = PredictionsSchema.parse(data);
     
     parsed.predictions.forEach((prediction) => {
       // Check probability ranges (should be between 0 and 100)
@@ -55,7 +55,7 @@ describe('Predictions Data Validation', () => {
   });
 
   it('should have non-empty string fields', () => {
-    const parsed = PredictionsSchema.parse(week1Data);
+    const parsed = PredictionsSchema.parse(data);
     
     parsed.predictions.forEach((prediction) => {
       expect(prediction.match.length).toBeGreaterThan(0);

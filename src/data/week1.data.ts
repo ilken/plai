@@ -1,6 +1,6 @@
 import { Predictions } from '@/types/Prediction.types';
 
-export const week1Data: Predictions = {
+export const data: Predictions = {
   "predictions": [
     {
       "match": "Brentford v Manchester City",

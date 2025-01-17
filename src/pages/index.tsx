@@ -3,12 +3,12 @@ import { TopPredictions } from '@/components/top-predictions/TopPredictions.comp
 import { PredictionsGrid } from '@/components/predictions-grid/PredictionsGrid.component';
 import { Header } from '@/components/header/Header.component';
 import { Footer } from '@/components/footer/Footer.component';
-import { week1Data } from '@/data/week1.data';
+import { data } from '@/data/week2.data';
 import { PredictionsSchema } from '@/types/Prediction.types';
 import { PredictionCard } from '@/components/prediction-card/PredictionCard.component';
 
 export default function Home() {
-  const { predictions } = PredictionsSchema.parse(week1Data);
+  const { predictions } = PredictionsSchema.parse(data);
 
   return (
     <div className="min-h-screen flex flex-col">
