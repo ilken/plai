@@ -6,11 +6,9 @@
   html {
     @apply text-gray-900 dark:text-white min-h-screen;
     background-image: radial-gradient(
-      linear-gradient(
-        111.4deg,
-        rgba(238,113,113,1) 1%,
-        rgba(246,215,148,1) 58%
-      )
+      circle 710px at 5.2% 7.2%,
+      rgb(255, 255, 255) 0%,
+      rgb(249 250 251) 44.7%
     );
     background-attachment: fixed;
   }

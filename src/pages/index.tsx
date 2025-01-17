@@ -7,6 +7,7 @@ import { Footer } from '@/components/footer/Footer.component';
 import { data } from '@/data/week2.data';
 import { PredictionsSchema } from '@/types/Prediction.types';
 import { PredictionCard } from '@/components/prediction-card/PredictionCard.component';
+import { Navbar } from '@/components/navbar/Navbar.component';
 
 export default function Home() {
   const { predictions } = PredictionsSchema.parse(data);
@@ -94,11 +95,12 @@ export default function Home() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </Head>
-      <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <div className="min-h-screen flex flex-col mt-16">
         <div className="max-w-7xl mx-auto px-4 py-8 flex-1 w-full">
           <Header />
           <TopPredictions predictions={predictions} />
-          <h2 className="text-2xl font-bold mb-4 dark:text-white">�� All Fixtures</h2>
+          <h2 className="text-2xl font-bold mb-4 dark:text-white">All Fixtures</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 py-4 max-w-7xl mx-auto">
             {predictions.map((prediction, index) => (
               <PredictionCard key={index} prediction={prediction} />
