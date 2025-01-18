@@ -44,7 +44,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>PLAI ⚽ | AI-Powered Premier League Predictions & Analysis</title>
+        <title>PLAI | AI-Powered Premier League Predictions & Analysis</title>
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="x-dns-prefetch-control" content="on" />
@@ -55,7 +55,7 @@ export default function Home() {
         <meta name="author" content="PLAI" />
         
         {/* Open Graph Tags */}
-        <meta property="og:title" content="PLAI ⚽ | Premier League Match Analysis & Predictions" />
+        <meta property="og:title" content="PLAI | Premier League Match Analysis & Predictions" />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://plai-orcin.vercel.app/og-image.jpg" />
@@ -67,7 +67,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@plai" />
         <meta name="twitter:creator" content="@plai" />
-        <meta name="twitter:title" content="PLAI ⚽ | Premier League Match Analysis" />
+        <meta name="twitter:title" content="PLAI | Premier League Match Analysis" />
         <meta name="twitter:description" content="Get accurate Premier League football predictions powered by AI. View match analysis, probability scores, and betting insights for upcoming fixtures." />
         <meta name="twitter:image" content="https://plai-orcin.vercel.app/og-image.jpg" />
         
