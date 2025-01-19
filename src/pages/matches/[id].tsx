@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { Navbar } from '@/components/navbar/Navbar.component';
 import { Footer } from '@/components/footer/Footer.component';
+import { Breadcrumbs } from '@/components/breadcrumbs/Breadcrumbs.component';
 import { data } from '@/data/week2.data';
 import { PredictionsSchema } from '@/types/Prediction.types';
 import Custom404 from '../404';
@@ -29,6 +30,15 @@ export default function PredictionPage() {
       
       <div className="min-h-screen flex flex-col mt-16">
         <div className="max-w-4xl mx-auto px-4 py-8 flex-1 w-full">
+          <div className="mb-6">
+            <Breadcrumbs
+              items={[
+                { label: 'Predictions', href: '/' },
+                { label: prediction.match },
+              ]}
+            />
+          </div>
+          
           <div className="bg-white/80 dark:bg-gray-900/90 rounded-2xl p-8 border border-gray-200/50 dark:border-gray-700/50 backdrop-blur-sm">
             <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
               {prediction.match}

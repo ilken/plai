@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { Footer } from '@/components/footer/Footer.component';
 import { Navbar } from '@/components/navbar/Navbar.component';
+import { Breadcrumbs } from '@/components/breadcrumbs/Breadcrumbs.component';
 
 export default function About() {
   return (
@@ -12,6 +13,14 @@ export default function About() {
             <title>About PLAI - Premier League AI Predictions</title>
             <meta name="description" content="Learn about PLAI's AI-powered Premier League football prediction model" />
           </Head>
+
+          <div className="mb-6">
+            <Breadcrumbs
+              items={[
+                { label: 'About' }
+              ]}
+            />
+          </div>
 
           <main>
             <h1 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white font-display">About PLAI</h1>
