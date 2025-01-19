@@ -103,7 +103,7 @@ export default function Home() {
           <h2 className="text-2xl font-bold mb-4 dark:text-white">All Fixtures</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 py-4 max-w-7xl mx-auto">
             {predictions.map((prediction, index) => (
-              <PredictionCard key={index} prediction={prediction} />
+              <PredictionCard key={index} prediction={prediction} index={index} />
             ))}
           </div>
         </div>

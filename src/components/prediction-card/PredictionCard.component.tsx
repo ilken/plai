@@ -1,7 +1,9 @@
+import { useRouter } from 'next/router';
 import { Prediction } from '@/types/Prediction.types';
 
 interface PredictionCardProps {
   prediction: Prediction;
+  index: number;
 }
 
 interface PredictionSectionProps {
@@ -14,9 +16,18 @@ interface PredictionSectionProps {
   colorClass: string;
 }
 
-export const PredictionCard = ({ prediction }: PredictionCardProps) => {
+export const PredictionCard = ({ prediction, index }: PredictionCardProps) => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push(`/matches/${index}`);
+  };
+
   return (
-    <div className="relative overflow-hidden bg-white/80 dark:bg-gray-900/90 rounded-2xl p-8 min-h-[420px] flex flex-col border border-gray-200/50 dark:border-gray-700/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 backdrop-blur-sm group">
+    <div
+      onClick={handleClick}
+      className="relative overflow-hidden bg-white/80 dark:bg-gray-900/90 rounded-2xl p-8 min-h-[420px] flex flex-col border border-gray-200/50 dark:border-gray-700/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 backdrop-blur-sm group cursor-pointer"
+    >
       <div className="absolute inset-0 dark:bg-gradient-to-br dark:from-gray-900/90 dark:to-gray-800/90" />
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 via-blue-400 to-cyan-400 dark:from-blue-500 dark:via-cyan-400 dark:to-blue-400 overflow-hidden">
         <div className="absolute inset-0 opacity-0 group-hover:opacity-100">
