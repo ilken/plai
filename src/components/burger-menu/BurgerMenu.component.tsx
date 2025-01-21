@@ -2,14 +2,18 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ThemeSwitch } from '@/components/theme-switch/ThemeSwitch.component';
+import useClickOutside from '@/hooks/useClickOutside';
 
 export const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
+
+  const menuRef = useClickOutside(closeMenu);
 
   return (
-    <div className="md:hidden">
+    <div className="md:hidden" ref={menuRef}>
       {/* Burger Button */}
       <button
         onClick={toggleMenu}
@@ -46,14 +50,14 @@ export const BurgerMenu = () => {
               <Link
                 href="/"
                 className="px-4 py-2 text-gray-600 dark:text-gray-300 hover:text-cyber-primary dark:hover:text-cyber-primary font-display"
-                onClick={toggleMenu}
+                onClick={closeMenu}
               >
                 Predictions
               </Link>
               <Link
                 href="/about"
                 className="px-4 py-2 text-gray-600 dark:text-gray-300 hover:text-cyber-primary dark:hover:text-cyber-primary font-display"
-                onClick={toggleMenu}
+                onClick={closeMenu}
               >
                 About
               </Link>
