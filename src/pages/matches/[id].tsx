@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { Navbar } from '@/components/navbar/Navbar.component';
 import { Footer } from '@/components/footer/Footer.component';
 import { Breadcrumbs } from '@/components/breadcrumbs/Breadcrumbs.component';
-import { data } from '@/data/week2.data';
+import { data } from '@/data/week3.data';
 import { PredictionsSchema } from '@/types/Prediction.types';
 import Custom404 from '../404';
 
