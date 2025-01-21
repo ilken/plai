@@ -20,11 +20,11 @@ export default function Home() {
     "@type": "SportsEvent",
     "name": "Premier League Match Predictions",
     "description": "AI-Powered Premier League Match Predictions and Analysis",
-    "url": "https://plai-orcin.vercel.app/",
+    "url": "https://www.plaifootball.com/",
     "organizer": {
       "@type": "Organization",
       "name": "PLAI",
-      "url": "https://plai-orcin.vercel.app/"
+      "url": "https://www.plaifootball.com/"
     },
     "sport": "Soccer",
     "competitor": predictions.map(p => ({
@@ -48,18 +48,18 @@ export default function Home() {
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="x-dns-prefetch-control" content="on" />
-        <link rel="dns-prefetch" href="https://plai-orcin.vercel.app" />
-        <link rel="preconnect" href="https://plai-orcin.vercel.app" />
+        <link rel="dns-prefetch" href="https://www.plaifootball.com" />
+        <link rel="preconnect" href="https://www.plaifootball.com" />
         <meta name="format-detection" content="telephone=no" />
-        <link rel="canonical" href="https://plai-orcin.vercel.app/" />
+        <link rel="canonical" href="https://www.plaifootball.com/" />
         <meta name="author" content="PLAI" />
         
         {/* Open Graph Tags */}
         <meta property="og:title" content="PLAI | Premier League Match Analysis & Predictions" />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://plai-orcin.vercel.app/og-image.jpg" />
-        <meta property="og:url" content="https://plai-orcin.vercel.app/" />
+        <meta property="og:image" content="https://www.plaifootball.com/og-image.jpg" />
+        <meta property="og:url" content="https://www.plaifootball.com/" />
         <meta property="og:site_name" content="PLAI" />
         <meta property="og:locale" content="en_GB" />
         
@@ -69,7 +69,7 @@ export default function Home() {
         <meta name="twitter:creator" content="@plai" />
         <meta name="twitter:title" content="PLAI | Premier League Match Analysis" />
         <meta name="twitter:description" content="Get accurate Premier League football predictions powered by AI. View match analysis, probability scores, and betting insights for upcoming fixtures." />
-        <meta name="twitter:image" content="https://plai-orcin.vercel.app/og-image.jpg" />
+        <meta name="twitter:image" content="https://www.plaifootball.com/og-image.jpg" />
         
         {/* Additional SEO Meta Tags */}
         <meta name="keywords" content="Premier League predictions, football analysis, betting tips, match predictions, AI football predictions, EPL predictions, soccer predictions, football betting" />
