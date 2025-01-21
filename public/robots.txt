@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://plai-orcin.vercel.app/sitemap.xml
+Sitemap: https://www.plaifootball.com/sitemap.xml

@@ -3,7 +3,7 @@ import { GetServerSideProps } from 'next';
 const Sitemap = () => null;
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => {
-  const baseUrl = 'https://plai-orcin.vercel.app';
+  const baseUrl = 'https://www.plaifootball.com';
   const currentDate = new Date().toISOString();
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
