@@ -15,22 +15,22 @@ describe('Predictions Data Validation', () => {
 
   it('should have valid prediction items', () => {
     const parsed = PredictionsSchema.parse(data);
-    
+
     parsed.predictions.forEach((prediction) => {
       // Check required fields
       expect(prediction.match).toBeDefined();
       expect(prediction.potentialScore).toBeDefined();
-      
+
       // Check result
       expect(prediction.result.prediction).toBeDefined();
       expect(typeof prediction.result.probability).toBe('number');
       expect(prediction.result.analysis).toBeDefined();
-      
+
       // Check overUnder
       expect(prediction.overUnder.prediction).toBeDefined();
       expect(typeof prediction.overUnder.probability).toBe('number');
       expect(prediction.overUnder.analysis).toBeDefined();
-      
+
       // Check bothTeamsToScore
       expect(prediction.bothTeamsToScore.prediction).toBeDefined();
       expect(typeof prediction.bothTeamsToScore.probability).toBe('number');
@@ -40,15 +40,15 @@ describe('Predictions Data Validation', () => {
 
   it('should have valid probability ranges', () => {
     const parsed = PredictionsSchema.parse(data);
-    
+
     parsed.predictions.forEach((prediction) => {
       // Check probability ranges (should be between 0 and 100)
       expect(prediction.result.probability).toBeGreaterThanOrEqual(0);
       expect(prediction.result.probability).toBeLessThanOrEqual(100);
-      
+
       expect(prediction.overUnder.probability).toBeGreaterThanOrEqual(0);
       expect(prediction.overUnder.probability).toBeLessThanOrEqual(100);
-      
+
       expect(prediction.bothTeamsToScore.probability).toBeGreaterThanOrEqual(0);
       expect(prediction.bothTeamsToScore.probability).toBeLessThanOrEqual(100);
     });
@@ -56,7 +56,7 @@ describe('Predictions Data Validation', () => {
 
   it('should have non-empty string fields', () => {
     const parsed = PredictionsSchema.parse(data);
-    
+
     parsed.predictions.forEach((prediction) => {
       expect(prediction.match.length).toBeGreaterThan(0);
       expect(prediction.potentialScore.length).toBeGreaterThan(0);
@@ -68,4 +68,4 @@ describe('Predictions Data Validation', () => {
       expect(prediction.bothTeamsToScore.analysis.length).toBeGreaterThan(0);
     });
   });
-}); 
+});

@@ -18,7 +18,7 @@ A modern web application that displays football match predictions with probabili
 ## Technologies Used
 
 - **Frontend Framework**: Next.js 13
-- **Styling**: 
+- **Styling**:
   - Tailwind CSS
   - CSS Modules
   - Custom animations
@@ -40,12 +40,14 @@ A modern web application that displays football match predictions with probabili
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/ilken/plai.git
 cd plai
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 # or
@@ -53,6 +55,7 @@ yarn install
 ```
 
 3. Run the development server:
+
 ```bash
 npm run dev
 # or

@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    @apply text-gray-900 dark:text-white min-h-screen;
+    @apply min-h-screen text-gray-900 dark:text-white;
     background-image: radial-gradient(
       circle 710px at 5.2% 7.2%,
       rgb(255, 255, 255) 0%,
@@ -12,13 +12,13 @@
     );
     background-attachment: fixed;
   }
-  
+
   html.dark {
     background-image: radial-gradient(
       circle 710px at 5.2% 7.2%,
-      rgba(37,89,222,1) 0%,
-      rgba(37,89,222,1) 7.5%,
-      rgba(4,4,29,1) 44.7%
+      rgba(37, 89, 222, 1) 0%,
+      rgba(37, 89, 222, 1) 7.5%,
+      rgba(4, 4, 29, 1) 44.7%
     );
     background-attachment: fixed;
   }
@@ -64,7 +64,12 @@
 
 /* Base styles for better typography */
 @layer base {
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-bold tracking-tight;
   }
 
@@ -102,4 +107,4 @@
     transform: translateY(0);
     opacity: 1;
   }
-} 
+}

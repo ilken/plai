@@ -7,4 +7,4 @@ module.exports = {
   useTabs: false,
   endOfLine: 'auto',
   plugins: ['prettier-plugin-tailwindcss'],
-}; 
+};

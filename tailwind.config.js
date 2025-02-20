@@ -21,8 +21,8 @@ module.exports = {
         'fade-in': 'fadeIn 0.5s ease-in-out',
         'slide-up': 'slideUp 0.5s ease-out',
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'glow': 'glow 2s ease-in-out infinite alternate',
-        'beam': 'beam 2s linear infinite',
+        glow: 'glow 2s ease-in-out infinite alternate',
+        beam: 'beam 2s linear infinite',
       },
       keyframes: {
         beam: {
@@ -30,8 +30,12 @@ module.exports = {
           '100%': { left: '100%' },
         },
         glow: {
-          '0%': { boxShadow: '0 0 5px #00ff9f, 0 0 10px #00ff9f, 0 0 15px #00ff9f' },
-          '100%': { boxShadow: '0 0 10px #00ff9f, 0 0 20px #00ff9f, 0 0 30px #00ff9f' },
+          '0%': {
+            boxShadow: '0 0 5px #00ff9f, 0 0 10px #00ff9f, 0 0 15px #00ff9f',
+          },
+          '100%': {
+            boxShadow: '0 0 10px #00ff9f, 0 0 20px #00ff9f, 0 0 30px #00ff9f',
+          },
         },
       },
       fontFamily: {
@@ -41,4 +45,4 @@ module.exports = {
     },
   },
   plugins: [],
-}; 
+};

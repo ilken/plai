@@ -13,21 +13,21 @@ export const ThemeSwitch = () => {
       <button
         onClick={toggleTheme}
         className={`
-          w-14 h-8 rounded-full p-1 transition-colors duration-200
+          h-8 w-14 rounded-full p-1 transition-colors duration-200
           ${theme === 'dark' ? 'bg-blue-600' : 'bg-gray-200'}
         `}
       >
         <div
           className={`
-            w-6 h-6 rounded-full transition-transform duration-200
+            h-6 w-6 rounded-full transition-transform duration-200
             ${theme === 'dark' ? 'translate-x-6 bg-white' : 'translate-x-0 bg-white'}
           `}
         >
-          <span className="flex items-center justify-center h-full">
+          <span className="flex h-full items-center justify-center">
             {theme === 'dark' ? '🌙' : '☀️'}
           </span>
         </div>
       </button>
     </motion.div>
   );
-}; 
+};

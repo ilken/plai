@@ -17,11 +17,11 @@ export const BurgerMenu = () => {
       {/* Burger Button */}
       <button
         onClick={toggleMenu}
-        className="p-2 text-gray-600 dark:text-gray-300 hover:text-cyber-primary"
+        className="p-2 text-gray-600 hover:text-cyber-primary dark:text-gray-300"
         aria-label="Toggle menu"
       >
         <svg
-          className="w-6 h-6"
+          className="h-6 w-6"
           fill="none"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -44,24 +44,24 @@ export const BurgerMenu = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-16 right-0 w-48 py-2 bg-white dark:bg-cyber-dark border border-gray-200 dark:border-gray-800 rounded-lg shadow-lg"
+            className="absolute right-0 top-16 w-48 rounded-lg border border-gray-200 bg-white py-2 shadow-lg dark:border-gray-800 dark:bg-cyber-dark"
           >
             <nav className="flex flex-col">
               <Link
                 href="/"
-                className="px-4 py-2 text-gray-600 dark:text-gray-300 hover:text-cyber-primary dark:hover:text-cyber-primary font-display"
+                className="px-4 py-2 font-display text-gray-600 hover:text-cyber-primary dark:text-gray-300 dark:hover:text-cyber-primary"
                 onClick={closeMenu}
               >
                 Predictions
               </Link>
               <Link
                 href="/about"
-                className="px-4 py-2 text-gray-600 dark:text-gray-300 hover:text-cyber-primary dark:hover:text-cyber-primary font-display"
+                className="px-4 py-2 font-display text-gray-600 hover:text-cyber-primary dark:text-gray-300 dark:hover:text-cyber-primary"
                 onClick={closeMenu}
               >
                 About
               </Link>
-              <div className="px-4 py-2 border-t border-gray-200 dark:border-gray-800">
+              <div className="border-t border-gray-200 px-4 py-2 dark:border-gray-800">
                 <ThemeSwitch />
               </div>
             </nav>
@@ -70,4 +70,4 @@ export const BurgerMenu = () => {
       </AnimatePresence>
     </div>
   );
-}; 
+};

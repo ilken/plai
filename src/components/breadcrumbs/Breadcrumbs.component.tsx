@@ -11,20 +11,20 @@ interface BreadcrumbsProps {
 export const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
   return (
     <nav className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-400">
-      <Link 
+      <Link
         href="/"
-        className="flex items-center hover:text-cyber-primary dark:hover:text-cyber-primary transition-colors"
+        className="flex items-center transition-colors hover:text-cyber-primary dark:hover:text-cyber-primary"
       >
-        <HomeIcon className="w-4 h-4" />
+        <HomeIcon className="h-4 w-4" />
       </Link>
-      
+
       {items.map((item, index) => (
         <div key={index} className="flex items-center">
-          <ChevronRightIcon className="w-4 h-4 mx-1" />
+          <ChevronRightIcon className="mx-1 h-4 w-4" />
           {item.href ? (
             <Link
               href={item.href}
-              className="hover:text-cyber-primary dark:hover:text-cyber-primary transition-colors"
+              className="transition-colors hover:text-cyber-primary dark:hover:text-cyber-primary"
             >
               {item.label}
             </Link>
@@ -35,4 +35,4 @@ export const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
       ))}
     </nav>
   );
-}; 
+};

@@ -19,4 +19,4 @@ export const PredictionsSchema = z.object({
 });
 
 export type Prediction = z.infer<typeof PredictionSchema>;
-export type Predictions = z.infer<typeof PredictionsSchema>; 
+export type Predictions = z.infer<typeof PredictionsSchema>;
