@@ -4,7 +4,7 @@ import { TopPredictions } from '@/components/top-predictions/TopPredictions.comp
 import { PredictionsGrid } from '@/components/predictions-grid/PredictionsGrid.component';
 import { Header } from '@/components/header/Header.component';
 import { Footer } from '@/components/footer/Footer.component';
-import { data } from '@/data/week5.data';
+import { data } from '@/data/week6.data';
 import { PredictionsSchema } from '@/types/Prediction.types';
 import { PredictionCard } from '@/components/prediction-card/PredictionCard.component';
 import { Navbar } from '@/components/navbar/Navbar.component';
