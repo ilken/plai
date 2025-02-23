@@ -31,8 +31,8 @@ export default function Custom404() {
               Match Not Found
             </h2>
             <p className="mx-auto mb-8 max-w-md text-gray-600 dark:text-gray-400">
-              The prediction you're looking for doesn't exist or has been
-              removed. Check out our latest predictions instead.
+              {`The prediction you're looking for doesn't exist or has been
+              removed. Check out our latest predictions instead.`}
             </p>
             <Link
               href="/"
