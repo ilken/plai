@@ -64,8 +64,7 @@ export const data: Predictions = {
       bothTeamsToScore: {
         prediction: 'No',
         probability: 60,
-        analysis:
-          'Ipswich may struggle to score against a solid Liverpool defence.',
+        analysis: 'Ipswich may struggle to score against a solid Liverpool defence.',
       },
     },
     {
@@ -108,8 +107,7 @@ export const data: Predictions = {
       bothTeamsToScore: {
         prediction: 'Yes',
         probability: 60,
-        analysis:
-          "Wolves may find the net at home, but Arsenal's attack should be too strong.",
+        analysis: "Wolves may find the net at home, but Arsenal's attack should be too strong.",
       },
     },
     {
@@ -124,8 +122,7 @@ export const data: Predictions = {
       overUnder: {
         prediction: 'Over 2.5 Goals',
         probability: 60,
-        analysis:
-          'Both teams have attacking quality and can be vulnerable defensively.',
+        analysis: 'Both teams have attacking quality and can be vulnerable defensively.',
       },
       bothTeamsToScore: {
         prediction: 'Yes',
@@ -145,14 +142,12 @@ export const data: Predictions = {
       overUnder: {
         prediction: 'Under 2.5 Goals',
         probability: 55,
-        analysis:
-          'Neither team is particularly prolific in attack, and this game could be cagey.',
+        analysis: 'Neither team is particularly prolific in attack, and this game could be cagey.',
       },
       bothTeamsToScore: {
         prediction: 'Yes',
         probability: 50,
-        analysis:
-          'Both teams have shown they can score, but clean sheets are also possible.',
+        analysis: 'Both teams have shown they can score, but clean sheets are also possible.',
       },
     },
     {
@@ -189,14 +184,12 @@ export const data: Predictions = {
       overUnder: {
         prediction: 'Under 2.5 Goals',
         probability: 55,
-        analysis:
-          'West Ham have struggled to score goals, and Villa may not need many to win.',
+        analysis: 'West Ham have struggled to score goals, and Villa may not need many to win.',
       },
       bothTeamsToScore: {
         prediction: 'No',
         probability: 55,
-        analysis:
-          "West Ham's lack of goalscoring threat suggests Villa could keep a clean sheet.",
+        analysis: "West Ham's lack of goalscoring threat suggests Villa could keep a clean sheet.",
       },
     },
     {
@@ -211,14 +204,12 @@ export const data: Predictions = {
       overUnder: {
         prediction: 'Under 2.5 Goals',
         probability: 55,
-        analysis:
-          'Both teams can be solid defensively, and this game could be tight and tactical.',
+        analysis: 'Both teams can be solid defensively, and this game could be tight and tactical.',
       },
       bothTeamsToScore: {
         prediction: 'Yes',
         probability: 55,
-        analysis:
-          'Both teams have shown they can score, but a clean sheet is also a possibility.',
+        analysis: 'Both teams have shown they can score, but a clean sheet is also a possibility.',
       },
     },
   ],

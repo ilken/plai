@@ -1,4 +1,4 @@
-import { data } from '@/data/week7.data';
+import { data } from '@/data/week28.data';
 import { PredictionsSchema } from '@/types/Prediction.types';
 
 export const useWeeklyData = () => {

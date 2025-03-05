@@ -11,9 +11,7 @@ export const TopPredictions = ({ predictions }: TopPredictionsProps) => {
 
   return (
     <div className="mb-8 rounded-lg border border-gray-200/50 bg-white/80 p-6 shadow-md backdrop-blur-sm dark:border-gray-700/50 dark:bg-gray-900/90">
-      <h2 className="mb-4 text-2xl font-bold dark:text-white">
-        🎯 Top Predictions
-      </h2>
+      <h2 className="mb-4 text-2xl font-bold dark:text-white">🎯 Top Predictions</h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
         {topPicks.map((pick, index) => (
           <div
@@ -26,9 +24,7 @@ export const TopPredictions = ({ predictions }: TopPredictionsProps) => {
               </div>
             </div>
             <div className="mb-2 flex items-start justify-between">
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-                {pick.type}
-              </span>
+              <span className="text-sm text-gray-500 dark:text-gray-400">{pick.type}</span>
               <FireMeter probability={pick.probability} />
             </div>
             <h3 className="mb-1 font-medium dark:text-white">{pick.match}</h3>

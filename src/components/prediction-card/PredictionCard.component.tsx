@@ -48,9 +48,7 @@ export const PredictionCard = ({ prediction, index }: PredictionCardProps) => {
         <div className="flex-1 space-y-8">
           <div>
             <div className="mb-2 flex flex-wrap items-center gap-2">
-              <span className="font-medium text-gray-900 dark:text-white/80">
-                Result
-              </span>
+              <span className="font-medium text-gray-900 dark:text-white/80">Result</span>
               <span className="whitespace-nowrap rounded-lg border border-blue-200/50 bg-blue-50 px-3 py-1.5 text-sm text-blue-600 dark:border-cyber-secondary/30 dark:bg-cyber-secondary/20 dark:text-cyber-secondary">
                 {prediction.result.prediction} ({prediction.result.probability}
                 %)
@@ -63,12 +61,9 @@ export const PredictionCard = ({ prediction, index }: PredictionCardProps) => {
 
           <div className="mb-6">
             <div className="mb-2 flex items-center gap-2">
-              <span className="font-medium text-gray-900 dark:text-white/80">
-                Over/Under
-              </span>
+              <span className="font-medium text-gray-900 dark:text-white/80">Over/Under</span>
               <span className="whitespace-nowrap rounded-lg border border-orange-200/50 bg-orange-50 px-3 py-1.5 text-sm text-orange-600 dark:border-orange-500/30 dark:bg-orange-900/30 dark:text-orange-400">
-                {prediction.overUnder.prediction} (
-                {prediction.overUnder.probability}%)
+                {prediction.overUnder.prediction} ({prediction.overUnder.probability}%)
               </span>
             </div>
             <p className="line-clamp-2 text-sm text-gray-600 dark:text-gray-400/80">
@@ -82,8 +77,8 @@ export const PredictionCard = ({ prediction, index }: PredictionCardProps) => {
                 Both Teams to Score
               </span>
               <span className="whitespace-nowrap rounded-lg border border-purple-200/50 bg-purple-50 px-3 py-1.5 text-sm text-purple-600 dark:border-cyber-primary/30 dark:bg-cyber-primary/20 dark:text-cyber-primary">
-                {prediction.bothTeamsToScore.prediction} (
-                {prediction.bothTeamsToScore.probability}%)
+                {prediction.bothTeamsToScore.prediction} ({prediction.bothTeamsToScore.probability}
+                %)
               </span>
             </div>
             <p className="line-clamp-2 text-sm text-gray-600 dark:text-gray-400/80">
@@ -96,16 +91,10 @@ export const PredictionCard = ({ prediction, index }: PredictionCardProps) => {
   );
 };
 
-const PredictionSection = ({
-  title,
-  prediction,
-  colorClass,
-}: PredictionSectionProps) => (
+const PredictionSection = ({ title, prediction, colorClass }: PredictionSectionProps) => (
   <div className="relative">
     <div className="mb-2 flex flex-wrap items-center gap-2">
-      <span className="font-mono font-medium text-gray-900 dark:text-cyber-light">
-        {title}
-      </span>
+      <span className="font-mono font-medium text-gray-900 dark:text-cyber-light">{title}</span>
       <span
         className={`rounded-full bg-gradient-to-r px-2 py-1 font-mono text-sm ${colorClass} text-white dark:text-cyber-dark`}
       >

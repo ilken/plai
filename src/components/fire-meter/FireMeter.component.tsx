@@ -13,9 +13,7 @@ export const FireMeter = ({ probability }: FireMeterProps) => {
 
   return (
     <div className="flex items-center gap-2">
-      <span className="font-mono text-sm text-cyber-primary">
-        {probability}%
-      </span>
+      <span className="font-mono text-sm text-cyber-primary">{probability}%</span>
       <span className="bg-gradient-to-r from-cyber-primary to-cyber-secondary bg-clip-text font-mono text-lg text-transparent">
         {getBars(probability)}
       </span>

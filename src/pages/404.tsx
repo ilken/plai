@@ -8,10 +8,7 @@ export default function Custom404() {
     <>
       <Head>
         <title>404 - Page Not Found | PLAI</title>
-        <meta
-          name="description"
-          content="The page you're looking for doesn't exist."
-        />
+        <meta name="description" content="The page you're looking for doesn't exist." />
       </Head>
 
       <Navbar />
@@ -19,9 +16,7 @@ export default function Custom404() {
       <div className="mt-16 flex min-h-screen flex-col">
         <div className="flex flex-1 flex-col items-center justify-center px-4 py-8">
           <div className="text-center">
-            <h1 className="mb-4 text-6xl font-bold text-gray-900 dark:text-white">
-              404
-            </h1>
+            <h1 className="mb-4 text-6xl font-bold text-gray-900 dark:text-white">404</h1>
             <div className="relative mb-8">
               <div className="mx-auto h-1 w-32 overflow-hidden rounded-full bg-gradient-to-r from-blue-600 via-blue-400 to-cyan-400 dark:from-blue-500 dark:via-cyan-400 dark:to-blue-400">
                 <div className="absolute inset-0 h-full w-full animate-beam bg-gradient-to-r from-transparent via-white/50 to-transparent" />

@@ -1,18 +1,16 @@
-import Head from 'next/head';
-import { ThemeSwitch } from '@/components/theme-switch/ThemeSwitch.component';
-import { TopPredictions } from '@/components/top-predictions/TopPredictions.component';
-import { PredictionsGrid } from '@/components/predictions-grid/PredictionsGrid.component';
-import { Header } from '@/components/header/Header.component';
 import { Footer } from '@/components/footer/Footer.component';
-import { data } from '@/data/week7.data';
-import { PredictionsSchema } from '@/types/Prediction.types';
-import { PredictionCard } from '@/components/prediction-card/PredictionCard.component';
+import { Header } from '@/components/header/Header.component';
 import { Navbar } from '@/components/navbar/Navbar.component';
+import { PredictionCard } from '@/components/prediction-card/PredictionCard.component';
+import { TopPredictions } from '@/components/top-predictions/TopPredictions.component';
+import { data } from '@/data/week28.data';
+import { PredictionsSchema } from '@/types/Prediction.types';
+import Head from 'next/head';
 
 export default function Home() {
   const { predictions } = PredictionsSchema.parse(data);
 
-  const todaysMatches = predictions.map((p) => p.match).join(', ');
+  const todaysMatches = predictions.map(p => p.match).join(', ');
   const description = `Get AI predictions and analysis for today's Premier League matches: ${todaysMatches}. View probability scores and betting insights.`;
 
   const structuredData = {
@@ -27,7 +25,7 @@ export default function Home() {
       url: 'https://www.plaifootball.com/',
     },
     sport: 'Soccer',
-    competitor: predictions.map((p) => ({
+    competitor: predictions.map(p => ({
       '@type': 'SportsTeam',
       name: p.match.split(' v ')[0],
     })),
@@ -55,16 +53,10 @@ export default function Home() {
         <meta name="author" content="PLAI" />
 
         {/* Open Graph Tags */}
-        <meta
-          property="og:title"
-          content="PLAI | Premier League Match Analysis & Predictions"
-        />
+        <meta property="og:title" content="PLAI | Premier League Match Analysis & Predictions" />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://www.plaifootball.com/og-image.jpg"
-        />
+        <meta property="og:image" content="https://www.plaifootball.com/og-image.jpg" />
         <meta property="og:url" content="https://www.plaifootball.com/" />
         <meta property="og:site_name" content="PLAI" />
         <meta property="og:locale" content="en_GB" />
@@ -73,18 +65,12 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@plai" />
         <meta name="twitter:creator" content="@plai" />
-        <meta
-          name="twitter:title"
-          content="PLAI | Premier League Match Analysis"
-        />
+        <meta name="twitter:title" content="PLAI | Premier League Match Analysis" />
         <meta
           name="twitter:description"
           content="Get accurate Premier League football predictions powered by AI. View match analysis, probability scores, and betting insights for upcoming fixtures."
         />
-        <meta
-          name="twitter:image"
-          content="https://www.plaifootball.com/og-image.jpg"
-        />
+        <meta name="twitter:image" content="https://www.plaifootball.com/og-image.jpg" />
 
         {/* Additional SEO Meta Tags */}
         <meta
@@ -97,33 +83,16 @@ export default function Home() {
         <meta name="rating" content="general" />
         <meta name="language" content="English" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta
-          name="apple-mobile-web-app-status-bar-style"
-          content="black-translucent"
-        />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="PLAI" />
         <meta name="application-name" content="PLAI" />
         <meta name="msapplication-TileColor" content="#1a1a2e" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
 
         {/* Favicon Tags */}
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
         <script
           type="application/ld+json"
@@ -135,16 +104,10 @@ export default function Home() {
         <div className="mx-auto w-full max-w-7xl flex-1 px-4 py-8">
           <Header />
           <TopPredictions predictions={predictions} />
-          <h2 className="mb-4 text-2xl font-bold dark:text-white">
-            All Fixtures
-          </h2>
+          <h2 className="mb-4 text-2xl font-bold dark:text-white">All Fixtures</h2>
           <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 py-4 lg:grid-cols-2">
             {predictions.map((prediction, index) => (
-              <PredictionCard
-                key={index}
-                prediction={prediction}
-                index={index}
-              />
+              <PredictionCard key={index} prediction={prediction} index={index} />
             ))}
           </div>
         </div>

@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { Navbar } from '@/components/navbar/Navbar.component';
 import { Footer } from '@/components/footer/Footer.component';
 import { Breadcrumbs } from '@/components/breadcrumbs/Breadcrumbs.component';
-import { data } from '@/data/week7.data';
+import { data } from '@/data/week28.data';
 import { PredictionsSchema } from '@/types/Prediction.types';
 import Custom404 from '../404';
 
@@ -35,10 +35,7 @@ export default function PredictionPage() {
         <div className="mx-auto w-full max-w-4xl flex-1 px-4 py-8">
           <div className="mb-6">
             <Breadcrumbs
-              items={[
-                { label: 'Predictions', href: '/' },
-                { label: prediction.match },
-              ]}
+              items={[{ label: 'Predictions', href: '/' }, { label: prediction.match }]}
             />
           </div>
 
@@ -59,13 +56,10 @@ export default function PredictionPage() {
               </h2>
               <div className="mb-4">
                 <span className="rounded-lg border border-blue-200/50 bg-blue-50 px-3 py-1.5 text-sm text-blue-600 dark:border-cyber-secondary/30 dark:bg-cyber-secondary/20 dark:text-cyber-secondary">
-                  {prediction.result.prediction} (
-                  {prediction.result.probability}%)
+                  {prediction.result.prediction} ({prediction.result.probability}%)
                 </span>
               </div>
-              <p className="text-gray-600 dark:text-gray-400">
-                {prediction.result.analysis}
-              </p>
+              <p className="text-gray-600 dark:text-gray-400">{prediction.result.analysis}</p>
             </section>
 
             {/* Over/Under */}
@@ -75,13 +69,10 @@ export default function PredictionPage() {
               </h2>
               <div className="mb-4">
                 <span className="rounded-lg border border-orange-200/50 bg-orange-50 px-3 py-1.5 text-sm text-orange-600 dark:border-orange-500/30 dark:bg-orange-900/30 dark:text-orange-400">
-                  {prediction.overUnder.prediction} (
-                  {prediction.overUnder.probability}%)
+                  {prediction.overUnder.prediction} ({prediction.overUnder.probability}%)
                 </span>
               </div>
-              <p className="text-gray-600 dark:text-gray-400">
-                {prediction.overUnder.analysis}
-              </p>
+              <p className="text-gray-600 dark:text-gray-400">{prediction.overUnder.analysis}</p>
             </section>
 
             {/* BTTS */}

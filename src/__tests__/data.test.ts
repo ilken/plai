@@ -16,7 +16,7 @@ describe('Predictions Data Validation', () => {
   it('should have valid prediction items', () => {
     const parsed = PredictionsSchema.parse(data);
 
-    parsed.predictions.forEach((prediction) => {
+    parsed.predictions.forEach(prediction => {
       // Check required fields
       expect(prediction.match).toBeDefined();
       expect(prediction.potentialScore).toBeDefined();
@@ -41,7 +41,7 @@ describe('Predictions Data Validation', () => {
   it('should have valid probability ranges', () => {
     const parsed = PredictionsSchema.parse(data);
 
-    parsed.predictions.forEach((prediction) => {
+    parsed.predictions.forEach(prediction => {
       // Check probability ranges (should be between 0 and 100)
       expect(prediction.result.probability).toBeGreaterThanOrEqual(0);
       expect(prediction.result.probability).toBeLessThanOrEqual(100);
@@ -57,7 +57,7 @@ describe('Predictions Data Validation', () => {
   it('should have non-empty string fields', () => {
     const parsed = PredictionsSchema.parse(data);
 
-    parsed.predictions.forEach((prediction) => {
+    parsed.predictions.forEach(prediction => {
       expect(prediction.match.length).toBeGreaterThan(0);
       expect(prediction.potentialScore.length).toBeGreaterThan(0);
       expect(prediction.result.prediction.length).toBeGreaterThan(0);

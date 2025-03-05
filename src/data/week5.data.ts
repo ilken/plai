@@ -14,14 +14,12 @@ export const data: Predictions = {
       overUnder: {
         prediction: 'Under 2.5 Goals',
         probability: 55,
-        analysis:
-          'Both teams can be defensively solid, and it might be a tight affair.',
+        analysis: 'Both teams can be defensively solid, and it might be a tight affair.',
       },
       bothTeamsToScore: {
         prediction: 'Yes',
         probability: 55,
-        analysis:
-          'Both teams have shown they can score, but it might not be a goal fest.',
+        analysis: 'Both teams have shown they can score, but it might not be a goal fest.',
       },
     },
     {
@@ -36,14 +34,12 @@ export const data: Predictions = {
       overUnder: {
         prediction: 'Over 2.5 Goals',
         probability: 65,
-        analysis:
-          "Arsenal's games often involve goals, and Leicester's defense has been leaky.",
+        analysis: "Arsenal's games often involve goals, and Leicester's defense has been leaky.",
       },
       bothTeamsToScore: {
         prediction: 'Yes',
         probability: 60,
-        analysis:
-          'Leicester might score, but Arsenal are likely to score more.',
+        analysis: 'Leicester might score, but Arsenal are likely to score more.',
       },
     },
     {
@@ -58,14 +54,12 @@ export const data: Predictions = {
       overUnder: {
         prediction: 'Under 2.5 Goals',
         probability: 60,
-        analysis:
-          'Ipswich might struggle to score, and Villa might win with a clean sheet.',
+        analysis: 'Ipswich might struggle to score, and Villa might win with a clean sheet.',
       },
       bothTeamsToScore: {
         prediction: 'No',
         probability: 70,
-        analysis:
-          "Ipswich's attack is not the strongest, and Villa's defense can be solid.",
+        analysis: "Ipswich's attack is not the strongest, and Villa's defense can be solid.",
       },
     },
     {
@@ -85,8 +79,7 @@ export const data: Predictions = {
       bothTeamsToScore: {
         prediction: 'Yes',
         probability: 50,
-        analysis:
-          "Both teams have the potential to score, but it's not guaranteed.",
+        analysis: "Both teams have the potential to score, but it's not guaranteed.",
       },
     },
     {
@@ -107,8 +100,7 @@ export const data: Predictions = {
       bothTeamsToScore: {
         prediction: 'Yes',
         probability: 65,
-        analysis:
-          'Newcastle have the attacking talent to get a goal, even against City.',
+        analysis: 'Newcastle have the attacking talent to get a goal, even against City.',
       },
     },
     {
@@ -123,8 +115,7 @@ export const data: Predictions = {
       overUnder: {
         prediction: 'Over 2.5 Goals',
         probability: 55,
-        analysis:
-          'Both teams have shown defensive vulnerabilities, and there could be goals.',
+        analysis: 'Both teams have shown defensive vulnerabilities, and there could be goals.',
       },
       bothTeamsToScore: {
         prediction: 'Yes',
@@ -144,8 +135,7 @@ export const data: Predictions = {
       overUnder: {
         prediction: 'Over 2.5 Goals',
         probability: 50,
-        analysis:
-          'Both teams are capable of scoring, making it a potentially open game.',
+        analysis: 'Both teams are capable of scoring, making it a potentially open game.',
       },
       bothTeamsToScore: {
         prediction: 'Yes',
@@ -165,8 +155,7 @@ export const data: Predictions = {
       overUnder: {
         prediction: 'Under 2.5 Goals',
         probability: 60,
-        analysis:
-          'It could be a low-scoring game, as both teams can be defensively organized.',
+        analysis: 'It could be a low-scoring game, as both teams can be defensively organized.',
       },
       bothTeamsToScore: {
         prediction: 'No',
@@ -181,20 +170,17 @@ export const data: Predictions = {
       result: {
         prediction: 'Liverpool Win',
         probability: 80,
-        analysis:
-          'Liverpool are the much stronger team and should comfortably win at home.',
+        analysis: 'Liverpool are the much stronger team and should comfortably win at home.',
       },
       overUnder: {
         prediction: 'Over 2.5 Goals',
         probability: 70,
-        analysis:
-          "Liverpool's attack is very strong, and they are likely to score multiple goals.",
+        analysis: "Liverpool's attack is very strong, and they are likely to score multiple goals.",
       },
       bothTeamsToScore: {
         prediction: 'No',
         probability: 75,
-        analysis:
-          "Wolves might find it hard to score against Liverpool's defense.",
+        analysis: "Wolves might find it hard to score against Liverpool's defense.",
       },
     },
     {
@@ -209,8 +195,7 @@ export const data: Predictions = {
       overUnder: {
         prediction: 'Over 2.5 Goals',
         probability: 60,
-        analysis:
-          'Both teams have potent attacks, and it could be a high-scoring encounter.',
+        analysis: 'Both teams have potent attacks, and it could be a high-scoring encounter.',
       },
       bothTeamsToScore: {
         prediction: 'Yes',

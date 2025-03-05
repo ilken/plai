@@ -20,8 +20,7 @@ export const data: Predictions = {
       bothTeamsToScore: {
         prediction: 'Yes',
         probability: 80,
-        analysis:
-          'Brentford might find the net at home, even if City are likely to score more.',
+        analysis: 'Brentford might find the net at home, even if City are likely to score more.',
       },
     },
     {
@@ -36,8 +35,7 @@ export const data: Predictions = {
       overUnder: {
         prediction: 'Over 2.5 Goals',
         probability: 60,
-        analysis:
-          "Fulham are decent going forward, and West Ham's defense can be leaky at times.",
+        analysis: "Fulham are decent going forward, and West Ham's defense can be leaky at times.",
       },
       bothTeamsToScore: {
         prediction: 'Yes',
@@ -63,8 +61,7 @@ export const data: Predictions = {
       bothTeamsToScore: {
         prediction: 'Yes',
         probability: 80,
-        analysis:
-          'Expect goals at both ends.  Both teams have strong attacking lineups.',
+        analysis: 'Expect goals at both ends.  Both teams have strong attacking lineups.',
       },
     },
     {
@@ -79,14 +76,12 @@ export const data: Predictions = {
       overUnder: {
         prediction: 'Under 2.5 Goals',
         probability: 40,
-        analysis:
-          "Bournemouth's struggles in front of goal could lead to a low-scoring match.",
+        analysis: "Bournemouth's struggles in front of goal could lead to a low-scoring match.",
       },
       bothTeamsToScore: {
         prediction: 'No',
         probability: 20,
-        analysis:
-          "Chelsea's defense is likely to keep a clean sheet against Bournemouth.",
+        analysis: "Chelsea's defense is likely to keep a clean sheet against Bournemouth.",
       },
     },
     {
@@ -107,8 +102,7 @@ export const data: Predictions = {
       bothTeamsToScore: {
         prediction: 'No',
         probability: 20,
-        analysis:
-          "Liverpool's defense should be able to handle Forest's attack.",
+        analysis: "Liverpool's defense should be able to handle Forest's attack.",
       },
     },
     {
@@ -129,8 +123,7 @@ export const data: Predictions = {
       bothTeamsToScore: {
         prediction: 'Yes',
         probability: 80,
-        analysis:
-          'Both teams have shown attacking potential, even in their inconsistent form.',
+        analysis: 'Both teams have shown attacking potential, even in their inconsistent form.',
       },
     },
     {
@@ -173,8 +166,7 @@ export const data: Predictions = {
       bothTeamsToScore: {
         prediction: 'Yes',
         probability: 80,
-        analysis:
-          'While Palace are favorites, Leicester might manage to score at home.',
+        analysis: 'While Palace are favorites, Leicester might manage to score at home.',
       },
     },
   ],

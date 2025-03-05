@@ -8,20 +8,17 @@ export const data: Predictions = {
       result: {
         prediction: 'Draw',
         probability: 40,
-        analysis:
-          'Forest are strong at home, but Brighton are tough to beat. A draw seems likely.',
+        analysis: 'Forest are strong at home, but Brighton are tough to beat. A draw seems likely.',
       },
       overUnder: {
         prediction: 'Under 2.5 Goals',
         probability: 60,
-        analysis:
-          'Both teams are defensively solid, expect a low-scoring affair.',
+        analysis: 'Both teams are defensively solid, expect a low-scoring affair.',
       },
       bothTeamsToScore: {
         prediction: 'Yes',
         probability: 55,
-        analysis:
-          "Both teams have the potential to score, but it won't be a goal fest.",
+        analysis: "Both teams have the potential to score, but it won't be a goal fest.",
       },
     },
     {
@@ -30,8 +27,7 @@ export const data: Predictions = {
       result: {
         prediction: 'Liverpool Win',
         probability: 70,
-        analysis:
-          'Liverpool are in excellent form and should easily overcome Bournemouth.',
+        analysis: 'Liverpool are in excellent form and should easily overcome Bournemouth.',
       },
       overUnder: {
         prediction: 'Over 2.5 Goals',
@@ -41,8 +37,7 @@ export const data: Predictions = {
       bothTeamsToScore: {
         prediction: 'No',
         probability: 60,
-        analysis:
-          "Bournemouth might struggle to score against Liverpool's defense.",
+        analysis: "Bournemouth might struggle to score against Liverpool's defense.",
       },
     },
     {
@@ -51,8 +46,7 @@ export const data: Predictions = {
       result: {
         prediction: 'Everton Win',
         probability: 50,
-        analysis:
-          'Everton at home should edge out a struggling Leicester side.',
+        analysis: 'Everton at home should edge out a struggling Leicester side.',
       },
       overUnder: {
         prediction: 'Over 2.5 Goals',
@@ -71,8 +65,7 @@ export const data: Predictions = {
       result: {
         prediction: 'Ipswich Town Win',
         probability: 45,
-        analysis:
-          'Ipswich at home could cause an upset against a poor Southampton team.',
+        analysis: 'Ipswich at home could cause an upset against a poor Southampton team.',
       },
       overUnder: {
         prediction: 'Under 2.5 Goals',
@@ -82,8 +75,7 @@ export const data: Predictions = {
       bothTeamsToScore: {
         prediction: 'No',
         probability: 60,
-        analysis:
-          "Southampton's struggles in front of goal are likely to continue.",
+        analysis: "Southampton's struggles in front of goal are likely to continue.",
       },
     },
     {
@@ -92,14 +84,12 @@ export const data: Predictions = {
       result: {
         prediction: 'Newcastle United Win',
         probability: 65,
-        analysis:
-          'Newcastle are strong and should comfortably beat Fulham at home.',
+        analysis: 'Newcastle are strong and should comfortably beat Fulham at home.',
       },
       overUnder: {
         prediction: 'Under 2.5 Goals',
         probability: 55,
-        analysis:
-          "Newcastle's defense is solid, and Fulham might struggle to score.",
+        analysis: "Newcastle's defense is solid, and Fulham might struggle to score.",
       },
       bothTeamsToScore: {
         prediction: 'No',
@@ -113,14 +103,12 @@ export const data: Predictions = {
       result: {
         prediction: 'Aston Villa Win',
         probability: 55,
-        analysis:
-          'Villa are in better form and should take the points against Wolves.',
+        analysis: 'Villa are in better form and should take the points against Wolves.',
       },
       overUnder: {
         prediction: 'Under 2.5 Goals',
         probability: 60,
-        analysis:
-          'Villa are defensively strong and Wolves are struggling to score.',
+        analysis: 'Villa are defensively strong and Wolves are struggling to score.',
       },
       bothTeamsToScore: {
         prediction: 'No',
@@ -153,8 +141,7 @@ export const data: Predictions = {
       result: {
         prediction: 'Draw',
         probability: 40,
-        analysis:
-          'Palace can be tough to break down, a draw is a likely outcome.',
+        analysis: 'Palace can be tough to break down, a draw is a likely outcome.',
       },
       overUnder: {
         prediction: 'Under 2.5 Goals',
@@ -164,8 +151,7 @@ export const data: Predictions = {
       bothTeamsToScore: {
         prediction: 'Yes',
         probability: 50,
-        analysis:
-          'Both teams have the potential to score, but it will be close.',
+        analysis: 'Both teams have the potential to score, but it will be close.',
       },
     },
     {
@@ -174,8 +160,7 @@ export const data: Predictions = {
       result: {
         prediction: 'Manchester City Win',
         probability: 50,
-        analysis:
-          'City have been dominant against Arsenal recently, and this could continue.',
+        analysis: 'City have been dominant against Arsenal recently, and this could continue.',
       },
       overUnder: {
         prediction: 'Over 2.5 Goals',
@@ -199,14 +184,12 @@ export const data: Predictions = {
       overUnder: {
         prediction: 'Over 2.5 Goals',
         probability: 55,
-        analysis:
-          "Chelsea's attack should be able to find the net against West Ham's defense.",
+        analysis: "Chelsea's attack should be able to find the net against West Ham's defense.",
       },
       bothTeamsToScore: {
         prediction: 'Yes',
         probability: 60,
-        analysis:
-          'West Ham have the potential to score, but Chelsea should win.',
+        analysis: 'West Ham have the potential to score, but Chelsea should win.',
       },
     },
   ],

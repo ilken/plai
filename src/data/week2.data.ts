@@ -36,8 +36,7 @@ export const data: Predictions = {
       overUnder: {
         prediction: 'Over 2.5 Goals',
         probability: 65,
-        analysis:
-          'Both teams have attacking strengths and can be vulnerable defensively.',
+        analysis: 'Both teams have attacking strengths and can be vulnerable defensively.',
       },
       bothTeamsToScore: {
         prediction: 'Yes',
@@ -58,8 +57,7 @@ export const data: Predictions = {
       overUnder: {
         prediction: 'Over 2.5 Goals',
         probability: 55,
-        analysis:
-          'Both teams have shown attacking capabilities and can concede goals.',
+        analysis: 'Both teams have shown attacking capabilities and can concede goals.',
       },
       bothTeamsToScore: {
         prediction: 'Yes',
@@ -80,14 +78,12 @@ export const data: Predictions = {
       overUnder: {
         prediction: 'Under 2.5 Goals',
         probability: 55,
-        analysis:
-          'Neither team is particularly prolific in attack, and this game could be cagey.',
+        analysis: 'Neither team is particularly prolific in attack, and this game could be cagey.',
       },
       bothTeamsToScore: {
         prediction: 'Yes',
         probability: 50,
-        analysis:
-          'Both teams have shown they can score, but clean sheets are also possible.',
+        analysis: 'Both teams have shown they can score, but clean sheets are also possible.',
       },
     },
     {
@@ -146,14 +142,12 @@ export const data: Predictions = {
       overUnder: {
         prediction: 'Under 2.5 Goals',
         probability: 55,
-        analysis:
-          'Both teams can be solid defensively, and this game could be tight and tactical.',
+        analysis: 'Both teams can be solid defensively, and this game could be tight and tactical.',
       },
       bothTeamsToScore: {
         prediction: 'Yes',
         probability: 55,
-        analysis:
-          'Both teams have shown they can score, but a clean sheet is also a possibility.',
+        analysis: 'Both teams have shown they can score, but a clean sheet is also a possibility.',
       },
     },
     {
@@ -168,8 +162,7 @@ export const data: Predictions = {
       overUnder: {
         prediction: 'Under 2.5 Goals',
         probability: 60,
-        analysis:
-          'Southampton have struggled to score goals, and Forest may not need many to win.',
+        analysis: 'Southampton have struggled to score goals, and Forest may not need many to win.',
       },
       bothTeamsToScore: {
         prediction: 'No',
@@ -190,8 +183,7 @@ export const data: Predictions = {
       overUnder: {
         prediction: 'Over 2.5 Goals',
         probability: 65,
-        analysis:
-          "Manchester City's attacking power should see them score several goals.",
+        analysis: "Manchester City's attacking power should see them score several goals.",
       },
       bothTeamsToScore: {
         prediction: 'No',
@@ -212,14 +204,12 @@ export const data: Predictions = {
       overUnder: {
         prediction: 'Under 2.5 Goals',
         probability: 55,
-        analysis:
-          'Wolves have struggled to score, and Chelsea may not need many goals to win.',
+        analysis: 'Wolves have struggled to score, and Chelsea may not need many goals to win.',
       },
       bothTeamsToScore: {
         prediction: 'No',
         probability: 55,
-        analysis:
-          "Wolves' lack of goalscoring threat suggests Chelsea could keep a clean sheet.",
+        analysis: "Wolves' lack of goalscoring threat suggests Chelsea could keep a clean sheet.",
       },
     },
   ],

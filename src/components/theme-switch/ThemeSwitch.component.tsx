@@ -5,11 +5,7 @@ export const ThemeSwitch = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <motion.div
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-      className="relative"
-    >
+    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="relative">
       <button
         onClick={toggleTheme}
         className={`

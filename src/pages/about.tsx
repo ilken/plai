@@ -31,11 +31,9 @@ export default function About() {
                 What is PLAI?
               </h2>
               <p className="text-gray-700 dark:text-gray-300">
-                PLAI is an advanced AI-powered prediction model specifically
-                designed for Premier League football matches. Our system
-                analyzes vast amounts of historical data, team statistics, and
-                current form to provide accurate predictions for upcoming
-                fixtures.
+                PLAI is an advanced AI-powered prediction model specifically designed for Premier
+                League football matches. Our system analyzes vast amounts of historical data, team
+                statistics, and current form to provide accurate predictions for upcoming fixtures.
               </p>
             </section>
 
@@ -44,15 +42,12 @@ export default function About() {
                 Our Predictions
               </h2>
               <p className="text-gray-700 dark:text-gray-300">
-                For each Premier League match, PLAI provides predictions in
-                three key areas:
+                For each Premier League match, PLAI provides predictions in three key areas:
               </p>
               <ul className="mt-4 list-disc space-y-2 pl-6">
                 <li className="text-gray-700 dark:text-gray-300">
-                  <strong className="text-gray-900 dark:text-white">
-                    Match Result:
-                  </strong>{' '}
-                  Who will win the match or if it will end in a draw
+                  <strong className="text-gray-900 dark:text-white">Match Result:</strong> Who will
+                  win the match or if it will end in a draw
                 </li>
                 <li className="text-gray-700 dark:text-gray-300">
                   <strong className="text-gray-900 dark:text-white">
@@ -61,9 +56,7 @@ export default function About() {
                   Whether both teams will score in the match
                 </li>
                 <li className="text-gray-700 dark:text-gray-300">
-                  <strong className="text-gray-900 dark:text-white">
-                    Over/Under 2.5 Goals:
-                  </strong>{' '}
+                  <strong className="text-gray-900 dark:text-white">Over/Under 2.5 Goals:</strong>{' '}
                   Whether the total goals scored will be over or under 2.5
                 </li>
               </ul>
@@ -74,10 +67,9 @@ export default function About() {
                 How It Works
               </h2>
               <p className="text-gray-700 dark:text-gray-300">
-                Our AI model processes multiple data points including team form,
-                head-to-head records, player statistics, and historical
-                performance patterns. Each prediction comes with a confidence
-                percentage and detailed analysis to help you understand the
+                Our AI model processes multiple data points including team form, head-to-head
+                records, player statistics, and historical performance patterns. Each prediction
+                comes with a confidence percentage and detailed analysis to help you understand the
                 reasoning behind our predictions.
               </p>
             </section>
