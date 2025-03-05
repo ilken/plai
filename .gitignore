@@ -107,4 +107,7 @@ coverage
 .yarn/unplugged
 .yarn/build-state.yml
 .yarn/install-state.gz
-.pnp.* 
+.pnp.*
+
+# Local data files
+src/data/*.data.ts 

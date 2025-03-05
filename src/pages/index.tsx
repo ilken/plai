@@ -3,12 +3,41 @@ import { Header } from '@/components/header/Header.component';
 import { Navbar } from '@/components/navbar/Navbar.component';
 import { PredictionCard } from '@/components/prediction-card/PredictionCard.component';
 import { TopPredictions } from '@/components/top-predictions/TopPredictions.component';
-import { data } from '@/data/week28.data';
-import { PredictionsSchema } from '@/types/Prediction.types';
+import { useWeeklyData } from '@/hooks/useWeeklyData';
 import Head from 'next/head';
+import { PredictionsSkeleton } from '@/components/skeletons/PredictionsSkeleton.component';
 
 export default function Home() {
-  const { predictions } = PredictionsSchema.parse(data);
+  const { predictions, isLoading, error } = useWeeklyData();
+
+  if (isLoading) {
+    return (
+      <>
+        <Navbar />
+        <PredictionsSkeleton />
+        <Footer />
+      </>
+    );
+  }
+
+  if (error) {
+    return (
+      <>
+        <Navbar />
+        <div className="mt-16 flex min-h-screen flex-col items-center justify-center">
+          <div className="text-center">
+            <h1 className="mb-4 text-2xl font-bold text-red-600 dark:text-red-400">
+              Error Loading Predictions
+            </h1>
+            <p className="text-gray-600 dark:text-gray-400">
+              Please try refreshing the page or check back later.
+            </p>
+          </div>
+        </div>
+        <Footer />
+      </>
+    );
+  }
 
   const todaysMatches = predictions.map(p => p.match).join(', ');
   const description = `Get AI predictions and analysis for today's Premier League matches: ${todaysMatches}. View probability scores and betting insights.`;

@@ -3,14 +3,43 @@ import Head from 'next/head';
 import { Navbar } from '@/components/navbar/Navbar.component';
 import { Footer } from '@/components/footer/Footer.component';
 import { Breadcrumbs } from '@/components/breadcrumbs/Breadcrumbs.component';
-import { data } from '@/data/week28.data';
-import { PredictionsSchema } from '@/types/Prediction.types';
+import { useWeeklyData } from '@/hooks/useWeeklyData';
 import Custom404 from '../404';
+import { PredictionDetailSkeleton } from '@/components/skeletons/PredictionDetailSkeleton.component';
 
 export default function PredictionPage() {
   const router = useRouter();
   const { id } = router.query;
-  const { predictions } = PredictionsSchema.parse(data);
+  const { predictions, isLoading, error } = useWeeklyData();
+
+  if (isLoading) {
+    return (
+      <>
+        <Navbar />
+        <PredictionDetailSkeleton />
+        <Footer />
+      </>
+    );
+  }
+
+  if (error) {
+    return (
+      <>
+        <Navbar />
+        <div className="mt-16 flex min-h-screen flex-col items-center justify-center">
+          <div className="text-center">
+            <h1 className="mb-4 text-2xl font-bold text-red-600 dark:text-red-400">
+              Error Loading Prediction
+            </h1>
+            <p className="text-gray-600 dark:text-gray-400">
+              Please try refreshing the page or check back later.
+            </p>
+          </div>
+        </div>
+        <Footer />
+      </>
+    );
+  }
 
   const prediction = predictions[Number(id)];
 
